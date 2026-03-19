@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 
 use App\Http\Controllers\CompetitionController;
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 
 Route::get('/', [CompetitionController::class, 'index'])->name('competitions.index');
 Route::get('/competitions/{code}', [CompetitionController::class, 'show'])->name('competitions.show');
