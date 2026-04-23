@@ -28,7 +28,7 @@ class FootballDataService
 
     public function getCompetitions(): array
     {
-        return $this->request('/competitions');
+        return $this->request(endpoint: '/competitions');
     }
 
     public function getCompetition(string $code): array
